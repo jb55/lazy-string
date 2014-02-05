@@ -1,0 +1,14 @@
+{
+  "name": "lazy-string",
+  "repo": "jb55/lazy-string",
+  "description": "Lazy string arguments",
+  "version": "0.0.1",
+  "keywords": ["lazy"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

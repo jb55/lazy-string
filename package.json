@@ -1,0 +1,27 @@
+{
+  "name": "lazy-string",
+  "version": "0.0.0",
+  "description": "Lazy strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jb55/lazy-string"
+  },
+  "keywords": [
+    "lazy"
+  ],
+  "devDependencies": {
+    "mocha": "*",
+    "make-test": "*",
+    "debug": "*",
+    "should": "*"
+  },
+  "author": "William Casarin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jb55/lazy-string/issues"
+  }
+}
