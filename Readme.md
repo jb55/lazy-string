@@ -1,4 +1,3 @@
-
 # lazy-string
 
   Lazy string arguments
@@ -19,9 +18,9 @@
 var lazy = require('lazy-string');
 var debug = require('debug')('project:debug');
 
-// won't be executed if debug is disabled
-debug(lazy(function() {
-  return JSON.stringify(largeobject);
+// parseExpr won't be executed if debug is disabled
+debug("slow expr parser %j", lazy(function() {
+  return parseExpr("(+ (* 2 3) (+ 1 2))");
 }));
 ```
 
