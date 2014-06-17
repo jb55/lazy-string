@@ -16,11 +16,17 @@
 
 ```js
 var lazy = require('lazy-string');
-var debug = require('debug')('project:debug');
+var debug = require('debug')('project');
 
-// parseExpr won't be executed if debug is disabled
-debug("slow expr parser %j", lazy(function() {
-  return parseExpr("(+ (* 2 3) (+ 1 2))");
+var obj = {
+  a: 2,
+  b: 3,
+  c: 4
+}
+
+// stringify won't be executed if debug is disabled
+debug("pretty json %s", lazy(function() {
+  return JSON.stringify(obj, null, 2) // pretty json stringify
 }));
 ```
 
